@@ -1,0 +1,13 @@
+<configuration>
+    <logger name="hu.javadev.vigszinhaz" level="DEBUG"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%date{MMM dd HH:mm:ss.SSS} %-5level [%thread] {%X{uuid}} | %logger{10} [%file:%line] | %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>

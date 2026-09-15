@@ -5,6 +5,8 @@ import java.util.SortedSet;
 
 public interface VigszinhazService {
 
+  SortedSet<TimeSlot> getTimeSlots();
+
   SortedSet<LocalDateTime> getAvailableTimeSlots();
 
   void checkForNewTimeSlots();
